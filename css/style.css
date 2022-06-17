@@ -1,0 +1,131 @@
+::selection{
+    color: white;
+    background-color: #bf0202;
+}
+.card{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 2px solid #bf0202;
+    border-radius: 0px !important;
+    box-shadow: 0 0 20px 0 rgba(97, 97, 97, 0.247);
+    max-width: 400px;
+}
+.card:hover{
+    box-shadow: 0 0 20px 0 rgba(97, 97, 97, 0.340);
+}
+.card:hover .product_title{
+    text-decoration: underline;
+}
+.card .product_image{
+    height: 240px;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+}
+.card img{
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all linear 0.2s;
+}
+.card img:hover{
+    transform: scale(1.05);
+}
+.card .card-header{
+    background-color: white;
+    text-align: center;
+    border-bottom: none;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0;
+    border-radius: 20px 20px 0 0;
+}
+.card-header span.product_sku{
+    font-size: 16px;
+    color: #bf0202;
+    font-family:  Montserrat, sans-serif;
+}
+.card-header span.product_title{
+    color: #bf0202;
+    font-weight: bold;
+    font-size: 22px;
+}
+.card-header span.product_title:hover{
+    cursor: pointer;
+}
+.card-header .dimension_image{
+    height: 25px;
+    opacity: 0.4;
+}
+.card-header .dimension_image:hover{
+    opacity: 1;
+}
+.card-header .product_dimensions h6{
+    margin-bottom: 0;
+}
+.card-header .product_dimensions h6 span{
+    text-transform: capitalize;
+}
+.card-body{
+    background-color: #f5f7f9;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+.product_dimensions .width_dimension:hover , .product_dimensions .length_dimension:hover , .product_dimensions .height_dimension:hover{
+    background-color: #f5f7f9;
+}
+.buttons{
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons button{
+    border: none;
+    border-radius: none !important;
+    padding: 15px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button a{
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 10px;
+}
+.buttons .price_request{
+    background: #3F393A;
+    background: -moz-linear-gradient(top,#3F393A 0,#4B4747 22%,#423C3D 50%,#1C1617 51%,#342E2F 72%,#686363 100%);
+    background: -webkit-linear-gradient(top,#3F393A 0,#4B4747 22%,#423C3D 50%,#1C1617 51%,#342E2F 72%,#686363 100%);
+    background: linear-gradient(to bottom,#3F393A 0,#4B4747 22%,#423C3D 50%,#1C1617 51%,#342E2F 72%,#686363 100%);
+}
+.buttons .cell_phone{
+    background: #DF4E56;
+    background: -moz-linear-gradient(top,#DF4E56 0,#E04E56 10%,#DD5D63 31%,#D64B52 50%,#C4131C 54%,#B8040D 78%,#E41B25 100%);
+    background: -webkit-linear-gradient(top,#DF4E56 0,#E04E56 10%,#DD5D63 31%,#D64B52 50%,#C4131C 54%,#B8040D 78%,#E41B25 100%);
+    background: linear-gradient(to bottom,#DF4E56 0,#E04E56 10%,#DD5D63 31%,#D64B52 50%,#C4131C 54%,#B8040D 78%,#E41B25 100%);
+}
+
+@media screen and (min-width : 400px) {
+    .buttons button a{
+        font-size: 14px !important;
+    }
+    .buttons button{
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (min-width : 1000px) {
+    .buttons button a{
+        font-size: 14px !important;
+    }
+    .buttons button{
+        padding: 15px 20px;
+    }
+}
